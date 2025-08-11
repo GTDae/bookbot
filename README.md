@@ -19,10 +19,10 @@ Command-Line Arguments: Accepts a file path as an argument, so you can analyse a
 How to Use
 To use Bookbot, simply run the main.py file from your terminal and provide the path to the book you want to analyse.
 
-Bash
-
+```bash
 # Example usage with a book in the 'books' directory
 python3 main.py books/frankenstein.txt
+```
 If you don't provide a file path, the programme will display a usage message to help you.
 
 Technologies Used
@@ -33,4 +33,4 @@ VSCode
 WSL2
 
 Acknowledgements
-This project was completed as part of a guided learning curriculum provided by Boot.Dev.
+This project was completed as part of a guided learning curriculum provided by [Boot.dev](https://www.boot.dev).
