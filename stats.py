@@ -1,12 +1,6 @@
 def get_num_words(text):
     """
     Counts the number of words in a given string.
-
-    Args:
-        text (str): The string content to analyze.
-
-    Returns:
-        int: The number of words in the string.
     """
     words = text.split()
     return len(words)
@@ -14,12 +8,6 @@ def get_num_words(text):
 def get_char_count(text):
     """
     Counts the frequency of each character in a string, ignoring case.
-
-    Args:
-        text (str): The string content to analyze.
-
-    Returns:
-        dict: A dictionary where keys are lowercase characters and values are their counts.
     """
     chars = {}
     for char in text.lower():
@@ -28,3 +16,16 @@ def get_char_count(text):
         else:
             chars[char] = 1
     return chars
+
+def get_sorted_char_list(char_counts):
+    """
+    Converts a character count dictionary into a sorted list of dictionaries.
+    """
+    sorted_list = []
+    for char, count in char_counts.items():
+        if char.isalpha():
+            sorted_list.append({"char": char, "num": count})
+    
+    # Sort the list by the "num" key in descending order
+    sorted_list.sort(reverse=True, key=lambda item: item["num"])
+    return sorted_list
