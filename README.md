@@ -3,7 +3,7 @@
 BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
 Bookbot
-Bookbot is a Python command-line programme designed to analyse text files and generate a statistical report. It's a simple, yet effective, tool for understanding the composition of a book or any other text. 📚
+Bookbot is a Python command-line programme designed to analyse text files and generate a statistical report. It's a simple, yet effective, tool for understanding the composition of a book or any other text. 
 
 This programme was developed as a guided project from Boot.Dev.
 
